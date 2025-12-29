@@ -1,0 +1,28 @@
+# Core Data Processing Libraries
+pandas==2.1.4
+numpy==1.26.2
+
+# Machine Learning Libraries
+scikit-learn==1.3.2
+xgboost==2.0.3
+
+# Deep Learning (Optional - for LSTM)
+tensorflow==2.15.0
+keras>=2.15.0
+
+# Visualization Libraries
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Utility Libraries
+joblib==1.3.2
+scipy==1.11.4
+
+# Progress Bars (Optional)
+tqdm==4.66.1
+
+#Notebook (for development/exploration)
+ipykernel==6.27.1
+
+# Time Series Analysis (if needed)
+statsmodels==0.14.2
