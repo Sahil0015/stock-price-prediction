@@ -23,34 +23,32 @@ This project develops and compares multiple ML models (Linear Regression, Ridge,
 
 ## 📁 Repository Structure
 
-stock-price-prediction/
-├── data/ # Datasets
-│ ├── Data.csv # Independent variable (provided)
-│ ├── StockPrice.csv # Dependent variable (provided)
-│ └── merged_data.csv # Processed dataset with engineered features
-├── notebooks/
-│ ├── exploration.ipynb # EDA and feature engineering
-│ ├── modeling.ipynb # Model training and evaluation
-│ ├── experimental_1.ipynb # Prior testing before main modeling
-│ └── experimental_2.ipynb # Experiments with ARIMA/SARIMA/SARIMAX
-├── models/ # Saved models
-│ ├── best_model.pkl # Best performing model (XGBoost)
-│ └── lstm_best.h5 # Best performing deep learning model
-├── results/ # Outputs and visualizations
-│ ├── final_model_comparison.csv # Performance metrics for all models
-│ ├── model_comparison_initial.csv # Initial model comparison results
-│ ├── feature_importance.csv # Feature importance rankings
-│ ├── all_models_predictions_detailed.csv # Detailed predictions table
-│ ├── best_model_predictions.csv # Best model predictions on test set
-│ ├── model_metadata.json # Model configuration and metadata
-│ └── *.png # Visualizations (comparison plots, feature importance,
-│ scatter plots, prediction charts)
-├── task/ # Assignment details
-│ └── Assignment.docx # Original assignment requirements and guidelines
-├── .gitignore # Git ignore rules
-├── LICENSE # MIT License
-├── README.md # Project documentation
-└── requirements.txt # Python dependencies
+Top-level map
+- data/ — Raw and engineered CSVs used for training and evaluation.
+- notebooks/ — EDA, feature engineering, and model training walkthroughs.
+- models/ — Persisted artifacts (tree-based and deep learning).
+- results/ — Metrics, comparisons, feature importance, and plots.
+- task/ — Assignment brief and reference material.
+- requirements.txt — Dependency pinning for reproducibility.
+
+Notable files
+- data/Data.csv — Primary independent variable (provided).
+- data/StockPrice.csv — Target price series (provided).
+- data/merged_data.csv — Feature-engineered merge ready for modeling.
+- notebooks/exploration.ipynb — EDA and feature creation.
+- notebooks/modeling.ipynb — Training, tuning, and evaluation.
+- notebooks/experimental_1.ipynb — Early prototyping.
+- notebooks/experimental_2.ipynb — ARIMA/SARIMA/SARIMAX experiments.
+- models/best_model.pkl — Best-performing XGBoost model.
+- models/lstm_best.h5 — Best-performing LSTM model.
+- results/final_model_comparison.csv — Head-to-head metrics across models.
+- results/model_metadata.json — Feature order and model configuration.
+- results/*.png — Visual summaries (comparisons, importances, predictions).
+
+Support files
+- LICENSE — MIT license.
+- README.md — Project documentation (this file).
+- .gitignore — Local dev and build ignores.
 
 ---
 
